@@ -1,48 +1,70 @@
-header.row.row--a
-  .cell.well--l.tci
-    h1.mbf MVCSS Demo
-    p General layout, structure, &amp; usage example.
-main.row
-  .cell.well
-    .g
-      .g-b.g-b--l--1of3
-        .card.mbs
-          h2 Heading
-          p.mbf These are some words that are describing this particular element.
-      .g-b.g-b--l--1of3
-        .card.mbs
-          h2 Heading
-          p.mbf These are some words that are describing this particular element.
-      .g-b.g-b--l--1of3
-        .card.mbs
-          h2 Heading
-          p.mbf These are some words that are describing this particular element.
-  .cell.cell--s.well--l
-    .mbl
-      h3.mbs Another Heading!
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    .g
-      .g-b.g-b--l--1of2
-        .card.mbs
-          .bucket.bucket--flag
-            .bucket-media
-              img alt=("Nick Walsh") src="http://placehold.it/100x100/000/000" /
-            .bucket-content
-              h4.mbf Nick Walsh
-              p.mbf.tcs.tsm Front-end Developer
-      .g-b.g-b--l--1of2
-        .card.mbs
-          .bucket.bucket--flag
-            .bucket-media
-              img alt=("Drew Barontini") src="http://placehold.it/100x100/000/000" /
-            .bucket-content
-              h4.mbf Drew Barontini
-              p.mbf.tcs.tsm Front-end Developer
-.row.row--b.tci
-  .cell.well--l
-    h3 Callout
-    p.tcs This is a callout section that is explaining things.
-footer.row
-  .cell.well
-    p.tac.tss This is a footer message that closes the page.
+header.header-page
+  .container
+    .columns.twelve
+      h1 Dynamour
+      p This will be the page where we can see all our modules on the same page.
+      p Let's start with a single page app, and once we wold have decide on a <em>menu</em> module, we can add it and separate content.
+
+section
+  .container
+    .row
+      .columns.four
+        h2 Heading 2
+        p.mbf These are some words that are describing this particular element.
+
+      .columns.four
+        h2 Heading 2
+        p.mbf These are some words that are describing this particular element.
+
+      .columns.four
+        h2 Heading 2
+        p.mbf These are some words that are describing this particular element.
+
+    .row
+      .columns.six
+        .mbl
+          h3.mbs h3 Columns 6
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      .columns.six
+        .mbl
+          h3.mbs h3 Columns 6
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+section
+  .container
+    .row
+      .columns.six
+        .m-card
+          .row
+            .columns.three
+              .m-card-image
+                img alt=("Nick Walsh") src="http://placehold.it/100x100/000/000"
+            .columns.three
+              .m-card-text
+                h4.mbf Nick Walsh
+                p.mbf.tcs.tsm Front-end Developer
+
+      .columns.six
+        .m-card
+          .row
+            .columns.three
+              .m-card-image
+                img alt=("Drew Barontini") src="http://placehold.it/100x100/000/000"
+            .columns.three
+              .m-card-text
+                h4.mbf Drew Barontini
+                p.mbf.tcs.tsm Front-end Developer
+
+section
+  .container
+    .columns.twelve
+      h3 Callout
+      p.tcs This is a callout section that is explaining things.
+
+footer
+  .container
+    .columns.twelve
+      p.tac.tss This is a footer message that closes the page.
