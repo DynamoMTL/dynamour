@@ -1,18 +1,8 @@
 // Customized version of Skeleton for wider resolutions
-$breakpoint-desktop-only: min-width 768px
-$breakpoint-desktop-wide: min-width 1260px
-$breakpoint-desktop-average: 960px 1259px
-$breakpoint-desktop-grid: 768px 1624px
-$breakpoint-tablet: 768px 1024px
-$breakpoint-tablet-landscape: 769px 1024px
-$breakpoint-tablet-portrait: 768px 959px
+$breakpoint-desktop-average: 0 1259px
+$breakpoint-tablet: 0px 1024px
 $breakpoint-mobile: 0px 767px
-$breakpoint-mobile-landscape: 480px 767px
 $breakpoint-mobile-portrait: 0px 479px
-
-// Perspective Nav Breakpoints
-$breakpoint-tablet-portrait-down: 0px 959px
-$breakpoint-smaller-than-nav: max-height 349px
 
 img, object, embed
   width: 100%
@@ -223,7 +213,7 @@ img
 
 /* #Tablet (Portrait) */
 /* Note: Design for a width of 768px */
-@include breakpoint($breakpoint-tablet-portrait, screen)
+@include breakpoint($breakpoint-tablet, screen)
   .container
     width: 768px
 
