@@ -14,7 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 gem 'slim', '~> 2.1.0'
-gem 'rails-assets-breakpoint-sass'
+gem 'compass-rails'
+gem 'breakpoint', '~> 2.0.7'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
