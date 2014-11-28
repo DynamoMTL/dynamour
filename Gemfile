@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
+
+
+############# DYNAMOUR SOURCE #############
 source 'https://rails-assets.org'
+############# #############
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -13,9 +17,13 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+
+############# DYNAMOUR STARTERS GEMS #############
 gem 'slim', '~> 2.1.0'
 gem 'compass-rails'
 gem 'breakpoint', '~> 2.0.7'
+######### #########
+
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
