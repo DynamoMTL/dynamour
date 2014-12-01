@@ -48,12 +48,12 @@
 
 // ----- CSS transitions ----- //
 
-@mixin css-transitions($time: .25s)
-  -moz-transition: all $time ease
-  -webkit-transition: all $time ease
-  -ms-transition: all $time ease
-  -o-transition: all $time ease
-  transition: all $time ease
+@mixin css-transitions($time: .25s, $transition: ease)
+  -moz-transition: all $time $transition
+  -webkit-transition: all $time $transition
+  -ms-transition: all $time $transition
+  -o-transition: all $time $transition
+  transition: all $time $transition
 
 // ----- Placeholder ----- //
 
