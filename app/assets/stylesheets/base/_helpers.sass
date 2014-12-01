@@ -34,7 +34,7 @@
 // $style - the font-style
 // $asset-pipeline - use the Rails asset pipeline (boolean)
 
-=font-face($family, $path, $weight: normal, $style: normal, $asset-pipeline: true)
+@mixin font-face($family, $path, $weight: normal, $style: normal, $asset-pipeline: true)
   @font-face
     font-family: $family
     font-style: $style
@@ -46,6 +46,16 @@
       src: url('#{$path}.eot')
       src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$family}') format('svg')
 
+// ----- CSS transitions ----- //
+//
+
+@mixin css-transitions($time: .25s)
+  -moz-transition: all $time ease
+  -webkit-transition: all $time ease
+  -ms-transition: all $time ease
+  -o-transition: all $time ease
+  transition: all $time ease
+
 // ----- Respond-to ----- //
 // -> Generates a media query
 //
@@ -54,7 +64,7 @@
 // $media - the media type ('screen', 'print', etc.)
 // @content - the generated content within the mixin
 
-=respond-to($val, $query: min-width, $media: screen)
+@mixin respond-to($val, $query: min-width, $media: screen)
   @media #{$media} and ($query: $val)
     @content
 
@@ -64,38 +74,7 @@
 
 // ----- Clearfix ----- //
 
-.group::after
+.clear::after
   clear: both
   content: ''
   display: table
-
-// ----- Debug ----- //
-
-.debug
-  background-color: pink !important
-
-// ----- Ellipsis ----- //
-
-.ellipsis
-  overflow: hidden
-  text-overflow: ellipsis
-  white-space: nowrap
-
-// ----- Image Replacement ----- //
-
-.ir
-  background-color: transparent
-  border: 0
-  overflow: hidden
-  &::before
-    content: ''
-    display: block
-    width: 0
-    height: 150%
-
-// -------------------------------------
-//   Animations
-// -------------------------------------
-
-// ...
-
