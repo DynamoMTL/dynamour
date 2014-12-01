@@ -47,7 +47,6 @@
       src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$family}') format('svg')
 
 // ----- CSS transitions ----- //
-//
 
 @mixin css-transitions($time: .25s)
   -moz-transition: all $time ease
@@ -55,6 +54,18 @@
   -ms-transition: all $time ease
   -o-transition: all $time ease
   transition: all $time ease
+
+// ----- Placeholder ----- //
+
+@mixin placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
 
 // ----- Respond-to ----- //
 // -> Generates a media query
