@@ -1,10 +1,10 @@
 // *************************************
 //
-//   Structure
-//   -> This is an example structure
+//   Pages
+//   -> Specifics page examples
 //
 // -------------------------------------
-//   Template (Haml)
+//   Home
 // -------------------------------------
 //
 // .structure[.structure--modifier](.is-state)(.has-context)
@@ -12,29 +12,17 @@
 //
 // *************************************
 
-// .structure
-
 // -------------------------------------
-//   Modifiers
+//   Home
 // -------------------------------------
 
-// .structure--modifier
-
-// -------------------------------------
-//   States
-// -------------------------------------
-
-// .structure.is-state
-
-// -------------------------------------
-//   Context
-// -------------------------------------
-
-// .has-structure
-
-// -------------------------------------
-//   Scaffolding
-// -------------------------------------
-
-// .structure-scaffolding
-
+.home
+  .m-card-image
+    &.m-card-image--a
+      @include image-2x("tmp/kitten1.jpeg", "tmp/kitten1.jpeg")
+      height: 200px
+      width: 200px
+    &.m-card-image--b
+      @include image-2x("tmp/kitten1.jpeg", "tmp/kitten1.jpeg")
+      height: 200px
+      width: 200px
