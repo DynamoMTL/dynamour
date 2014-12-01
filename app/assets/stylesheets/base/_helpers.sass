@@ -46,6 +46,7 @@
       src: url('#{$path}.eot')
       src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$family}') format('svg')
 
+
 // ----- CSS transitions ----- //
 
 @mixin css-transitions($time: .25s, $transition: ease)
@@ -54,6 +55,7 @@
   -ms-transition: all $time $transition
   -o-transition: all $time $transition
   transition: all $time $transition
+
 
 // ----- Placeholder ----- //
 
@@ -66,6 +68,15 @@
     @content
   &:-ms-input-placeholder
     @content
+
+
+// ----- Vertical align ----- //
+
+@mixin vertical-align
+  @include transform(translateY(-50%))
+  position: relative
+  top: 50%
+
 
 // ----- Respond-to ----- //
 // -> Generates a media query
