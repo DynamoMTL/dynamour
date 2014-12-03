@@ -83,20 +83,10 @@ $b-space-xl: $b-space * 4
 
 // Breakpoints
 
-$g-s: em(480px)
-$g-m: em(800px)
-$g-l: em(1024px)
-
-// Settings
-
-$g-columns: 12
-$g-defaults: 's' $g-s, 'm' $g-m, 'l' $g-l
-$g-gutter: 20px
-$g-silent: false
-
-// Selector
-
-$g-selector: if($g-silent, unquote("%"), unquote("."))
+$breakpoint-desktop-average: max-width 1259px
+$breakpoint-tablet: max-width 1024px
+$breakpoint-mobile: max-width 767px
+$breakpoint-mobile-portrait: max-width 479px
 
 // -------------------------------------
 //   Structures
