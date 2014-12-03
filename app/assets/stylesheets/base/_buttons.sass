@@ -6,7 +6,7 @@
 
 
 .btn
-  @include css-transitions()
+  @include css-transitions
   @include inline-block
   @include reset-box-model
   -webkit-font-smoothing: antialiased
@@ -17,6 +17,8 @@
   padding: 1em 2em
 
   &:hover
+    background: $c-black
+    color: $c-white
 
   &.btn-xs
 
