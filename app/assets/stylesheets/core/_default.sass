@@ -5,8 +5,48 @@
 //
 // *************************************
 
+$c-white: #ffffff !default
+$c-black: #000000 !default
+$c-text: #444444 !default
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 3px !default
+$b-borderStyle: solid !default
+$b-borderWidth: 2px !default
+$b-border: $b-borderWidth $b-borderStyle $c-black !default
+$b-boxShadow: 0 2px 0 rgba($c-text, 0.25) !default
+
 // -------------------------------------
-//   Default
+//   Typography
 // -------------------------------------
 
-// We need to define these variables
+$b-fontFamily-heading: sans-serif !default
+$b-fontFamily: sans-serif !default
+$b-fontSize: 16px !default
+$b-fontSize-xs: 60% !default
+$b-fontSize-s: 75% !default
+$b-fontSize-m: 90% !default
+$b-fontSize-l: 115% !default
+$b-fontSize-xl: 150% !default
+$b-lineHeight: 1.5 !default
+
+// -------------------------------------
+//   Sizing
+// -------------------------------------
+
+$b-space: em(20px) !default
+$b-space-xs: $b-space * 0.25 !default
+$b-space-s: $b-space * 0.5 !default
+$b-space-l: $b-space * 2 !default
+$b-space-xl: $b-space * 4 !default
+
+// -------------------------------------
+//   Breakpoints
+// -------------------------------------
+
+$breakpoint-desktop-average: max-width 1259px !default
+$breakpoint-tablet: max-width 1024px !default
+$breakpoint-mobile: max-width 767px !default
+$breakpoint-mobile-portrait: max-width 479px !default
+
