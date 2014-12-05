@@ -102,8 +102,10 @@
 
 
 // ----- Rem mixin ----- //
-// $image-standard - the non retina image
-// $image-retina - the retina image
+// you can use px, rem, %
+// @include rem(font-size, 14px);
+// @include rem(margin, 0 auto 1);
+// @include rem(padding-bottom, 3%);
 
 @mixin rem($property, $values)
   // Create a couple of empty lists as output buffers.
