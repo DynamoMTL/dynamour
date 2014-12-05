@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'slim', '~> 2.1.0'
 gem 'compass-rails'
 gem 'breakpoint', '~> 2.0.7'
+gem 'font-awesome-sass'
 ######### #########
 
 
