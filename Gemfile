@@ -14,8 +14,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 ############# DYNAMOUR STARTERS GEMS #############
 gem 'slim', '~> 2.1.0'
-gem 'compass-rails'
-gem 'breakpoint', '~> 2.0.7'
+gem 'bourbon'
 gem 'font-awesome-sass'
 ######### #########
 
